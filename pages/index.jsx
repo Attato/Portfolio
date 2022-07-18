@@ -13,7 +13,9 @@ const Home = () => {
 
 			<Header />
 			
-            
+            <div className="body">
+
+            </div>
 
 			<Footer />
 		</>
