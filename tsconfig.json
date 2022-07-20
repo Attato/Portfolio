@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/index.jsx"
-  ],
+, "pages/api/tabs.jsx"  ],
   "exclude": [
     "node_modules"
   ]

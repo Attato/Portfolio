@@ -1,58 +1,84 @@
-import React, { Suspense } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Header from 'components/header/header';
 import Footer from 'components/footer/footer';
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
+import {tabs} from './api/tabs'
+import { motion, AnimatePresence, AnimateSharedLayout } from 'framer-motion';
 
-const startDate = new Date('2021-01-11');
-let today = new Date(new Date() - startDate);
-
-const Character = () => {
-	return(
-		<>
-			<OrbitControls target={[0, 0.35, 0]} maxPolarAngle={1.45} />
-			<PerspectiveCamera makeDefault fov={20} position={[3, 2, 5]} />
-
-			<mesh>
-				<boxGeometry args={[1, 1, 1]} />
-				<meshBasicMaterial color={"white"} />
-			</mesh>
-		</>
-	);
-}
-
+const variants = {
+	enter: () => {
+		return {
+			x: -1000,
+			opacity: 0
+		};
+	},
+	center: {
+		x: 0,
+		opacity: 1
+	},
+	exit: () => {
+		return {
+			x: -1000,
+			opacity: 0
+		};
+	}
+};
 
 const Home = () => {
 
+	const [[page], setPage] = useState([0, 0]);
+
 	return (
-		<>
+		<motion.div initial="hidden" whileInView="visible">
 			<Head>
                 <title>Главная</title>
                 <meta name="description" content="" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+
 			<Header />
-			
+			<div className="sub">
+				{tabs.map(({ title }, i) => {
+					const isActive = i === page;
+					return (
+					<a
+						key={i}
+						onClick={() => {
+						setPage([i, i - page]);
+						}}
+						className={isActive ? "blue" : ""}
+					>	
+						{title}
+						{isActive ? <motion.div className="underline" layoutId="underline"/> : null}
+					</a>
+					);
+				})}
+			</div>
+
             <div className="body">
-				<div className="home__welcome">
-					<div className="home__welcome-info">
-						<h1>Lorem ipsum dolor sit amet</h1>
-						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-						<p  className="date">Frontend developer: {((today.toISOString().slice(0, 4) - 1970) + "y " + (today.getMonth()) + "m " + today.getDate() + "d.")}</p>
-					</div>
-
-					<Suspense fallback={null}>
-						<Canvas className="canvas" shadows>
-							<Character/>
-						</Canvas>
-					</Suspense>
-				</div>
-            </div>
-
+				<>
+					<div className="menu__sticky__wrap">
+						<div className="menu__button__wrap">									
+							
+						</div> 
+					</div>	
+					<motion.div
+						key={page}					
+						variants={variants}
+						initial="enter"
+						animate="center"							
+						transition={{
+						x: { type: "spring", stiffness: 300, damping: 30, duration: 2 },
+						opacity: { duration: 0.2 }
+						}}								
+					>								
+						{tabs[page].wrap}
+					</motion.div>				
+				</>
+			</div>
 			<Footer />
-		</>
+        </motion.div>
 	);
 };
 

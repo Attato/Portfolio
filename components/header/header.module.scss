@@ -19,6 +19,7 @@
 
             a {
                 margin-left: 5px;
+                user-select: none;
             }
 
             a:first-child {
@@ -42,31 +43,6 @@
             max-width: calc(100% / 3);
             width: 100%;
             color: #b7bdc2;
-        }
-    }
-    
-    .sub {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        max-width: 1300px;
-        height: 60px;
-        margin: auto;
-        padding: 20px 0;
-        border-top: 1px solid #28292b;
-
-        a {
-            margin-left: 25px;
-            font-size: 13px;
-            color: #b7bdc2;
-            &:hover{
-                color: #47b5eb;
-            }
-        }
-        
-        a:first-child{
-            margin-left: 0;
         }
     }
 }
