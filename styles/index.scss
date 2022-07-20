@@ -40,4 +40,9 @@
 
 .canvas{
     height: 600px !important;
+    cursor: pointer;
+    
+    &:active{
+        cursor: grabbing;
+    }
 }
