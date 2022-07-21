@@ -24,6 +24,19 @@
     a:first-child{
         margin-left: 0;
     }
+    
+    .underline{
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        background: #28292b;
+        position: relative;
+        margin-top: 5px;
+    }
+    
+    .hover{
+        color: white !important;
+    }
 }
 
 .body {
@@ -31,59 +44,44 @@
 	padding: 0 15px;
     max-width: 1330px;
     margin: auto;
-}
 
-.home__welcome{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .home__welcome-info{
-        max-width: 380px;
-        height: 600px;
+    .home__welcome{
         display: flex;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 25px;
-
-        h1 {
-            color: white;
-            font-weight: 400;
-            font-size: 42px;
-            margin: 0;
+        justify-content: space-between;
+        align-items: center;
+    
+        .home__welcome-info{
+            max-width: 380px;
+            height: 600px;
+            display: flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 25px;
+    
+            span{
+                font-size: 16px;
+                color: #acacac;
+            }
+    
+            .date {
+                color: #acacac;
+                margin: 0;
+            }
         }
 
-        span{
-            font-size: 16px;
-            color: #acacac;
-        }
-
-        .date {
-            color: #acacac;
-            margin: 0;
+        .canvas{
+            height: 600px !important;
+            cursor: pointer;
+        
+            &:active{
+                cursor: grabbing;
+            }
         }
     }
 }
 
-.canvas{
-    height: 600px !important;
-    cursor: pointer;
-
-    &:active{
-        cursor: grabbing;
-    }
-}
-
-.underline{
-    width: 100%;
-    height: 2px;
-    border-radius: 2px;
-    background: #28292b;
-    position: relative;
-    margin-top: 5px;
-}
-
-.blue{
-    color: white !important;
+.projects{
+    margin-top: 5rem;
+    height: 40vh;
 }

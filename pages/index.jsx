@@ -47,7 +47,7 @@ const Home = () => {
 						onClick={() => {
 						setPage([i, i - page]);
 						}}
-						className={isActive ? "blue" : ""}
+						className={isActive ? "hover" : ""}
 					>	
 						{title}
 						{isActive ? <motion.div className="underline" layoutId="underline"/> : null}

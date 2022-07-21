@@ -8,7 +8,7 @@ let today = new Date(new Date() - startDate);
 const Character = () => {
 	return(
 		<>
-			<OrbitControls passive="true" target={[0, 0.35, 0]} maxPolarAngle={1.45} />
+			<OrbitControls passive="true" target={[0, 0.30, 0]} maxPolarAngle={1.45} />
 			<PerspectiveCamera makeDefault fov={20} position={[3, 2, 5]} />
 
 			<mesh>
@@ -20,7 +20,7 @@ const Character = () => {
 }
 
 const Home = (
-    <div className="body">
+    <div className="body" key={Date.now()}>
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Home page dolor sit amet</h1>
@@ -38,7 +38,7 @@ const Home = (
 )
 
 const About = (
-    <div className="body">
+    <div className="body" key={Date.now()}>
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>About page dolor sit amet</h1>
@@ -56,25 +56,28 @@ const About = (
 )
 
 const Portfolio = (
-    <div className="body">
+    <div className="body" key={Date.now()}>
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Portfolio dolor sit amet</h1>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
                 <p  className="date">Frontend developer: {((today.toISOString().slice(0, 4) - 1970) + "y " + (today.getMonth()) + "m " + today.getDate() + "d.")}</p>
             </div>
-
             <Suspense fallback={null}>
                 <Canvas className="canvas" shadows>
                     <Character/>
                 </Canvas>
             </Suspense>
         </div>
+
+            <div className="projects">
+                <h1>Projects</h1>
+            </div>
     </div>
 )
 
 const Contact = (
-    <div className="body">
+    <div className="body" key={Date.now()}>
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Contact me</h1>
