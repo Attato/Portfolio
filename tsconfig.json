@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "es6",
+    "target": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -15,6 +15,10 @@
     "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
+    "moduleResolution": "node",
+    "noResolve": false,
+    "removeComments": true,
+    "sourceMap": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "resolveJsonModule": true
@@ -23,8 +27,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/index.jsx"
-, "pages/api/tabs.jsx"  ],
+    "pages/index.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

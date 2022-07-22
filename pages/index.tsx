@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Header from 'components/header/header';
 import Footer from 'components/footer/footer';
-import {tabs} from './api/tabs'
-import { motion, AnimatePresence, AnimateSharedLayout } from 'framer-motion';
+import { tabs } from './api/tabs'
+import { motion } from 'framer-motion';
 
 const variants = {
 	enter: () => {
