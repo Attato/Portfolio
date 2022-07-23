@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Header = ( ) => {
     return(
         <>
-            <header className={styles.header}>
+            <header className={styles.header} id="header">
                 <div className={styles.main}>
                     <span className={styles.social__links}>
                         <Link href="https://vk.com/qwaqwakva"><a target="blank"><Image src="/vk.svg" alt="" width={20} height={20}/></a></Link>

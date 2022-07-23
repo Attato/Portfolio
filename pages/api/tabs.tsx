@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import Image from 'next/image';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 
@@ -59,20 +60,29 @@ const Portfolio = (
     <div className="body" key={Date.now()}>
         <div className="home__welcome">
             <div className="home__welcome-info">
-                <h1>Portfolio dolor sit amet</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                <p  className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
-            </div>
-            <Suspense fallback={null}>
-                <Canvas className="canvas" shadows>
-                    <Character/>
-                </Canvas>
-            </Suspense>
-        </div>
-
-            <div className="projects">
                 <h1>Projects</h1>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                <p  className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>     
             </div>
+            <div className="home__welcome-projects">
+                <h1>AirPort</h1>
+                <span>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>                    
+                <Image src="/airport.jpg" width={650} height={370} /> 
+                <span>This site... Lorem ipsum dolor sit amet</span>
+
+                <h1>AirPort</h1>
+                <span>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>                    
+                <Image src="/airport.jpg" width={650} height={370} /> 
+                <span>This site... Lorem ipsum dolor sit amet</span>
+
+                <h1>AirPort</h1>
+                <span>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>                    
+                <Image src="/airport.jpg" width={650} height={370} /> 
+                <span>This site... Lorem ipsum dolor sit amet</span>
+
+                <button><a href="/#header">Back to top ↑</a></button>
+            </div>
+        </div>
     </div>
 )
 
