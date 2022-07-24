@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 
@@ -91,7 +92,10 @@ const Contact = (
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Contact me</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                <Link href="https://vk.com/qwaqwakva"><a className="social__link" target="blank"><Image src="/vk.svg" alt="" width={20} height={20}/><span>VKontakte</span></a></Link>
+                <Link href="https://t.me/qwaqwakwa"><a className="social__link" target="blank"><Image src="/telegram.svg" alt="" width={20} height={20}/><span>Telegram</span></a></Link>
+                <Link href="https://github.com/Attato"><a className="social__link" target="blank"><Image src="/github.svg" alt="" width={20} height={20}/><span>GitHub</span></a></Link>
+                <Link href="mailto:rde8519@mail.ru"><a className="social__link" target="blank"><Image src="/email.svg" alt="" width={20} height={20}/><span>rde8519@mail.ru</span></a></Link>
                 <p  className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
             </div>
 
