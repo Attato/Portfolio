@@ -46,13 +46,16 @@
 
 .body {
 	min-height: calc(100vh - 150px - 100px);
-	padding: 0 15px;
-    max-width: 1330px;
+    max-width: 1300px;
     margin: auto;
+    padding-bottom: 20px;
+    height: 100%;
 
     .home__welcome{
         display: flex;
         justify-content: space-between;
+        height: 100%;
+        margin: auto;
     
         .home__welcome-info{
             max-width: 380px;
@@ -83,8 +86,8 @@
             }
         }
 
-        .canvas{
-            height: 600px !important;
+        canvas{
+            height: 600px;
             cursor: pointer;
         
             &:active{
@@ -118,7 +121,17 @@
                 color: white;
                 display: flex;
                 justify-content: flex-end;
-                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024) { 
+    .body{
+        .home__welcome{
+            
+            canvas{
+                height: 250px !important;    
             }
         }
     }

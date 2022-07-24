@@ -55,28 +55,26 @@ const Home = () => {
 					);
 				})}
 			</div>
-
-            <div className="body">
-				<>
-					<div className="menu__sticky__wrap">
-						<div className="menu__button__wrap">									
-							
-						</div> 
-					</div>	
-					<motion.div
-						key={page}					
-						variants={variants}
-						initial="enter"
-						animate="center"							
-						transition={{
-						x: { type: "spring", stiffness: 300, damping: 30, duration: 2 },
-						opacity: { duration: 0.2 }
-						}}								
-					>								
-						{tabs[page].wrap}
-					</motion.div>				
-				</>
-			</div>
+			<>
+				<div className="menu__sticky__wrap">
+					<div className="menu__button__wrap">									
+						
+					</div> 
+				</div>	
+				<motion.div
+					key={page}					
+					variants={variants}
+					initial="enter"
+					animate="center"							
+					transition={{
+					x: { type: "spring", stiffness: 300, damping: 30, duration: 2 },
+					opacity: { duration: 0.2 }
+					}}								
+				>								
+					{tabs[page].wrap}
+				</motion.div>				
+			</>
+			
 			<Footer />
         </motion.div>
 	);
