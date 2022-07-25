@@ -10,8 +10,8 @@ const differenceDate: Date = new Date(+new Date() - +startDate);
 const Character = () => {
 	return(
 		<>
-			<OrbitControls target={[0, 0.30, 0]} maxPolarAngle={1.45} />
-			<PerspectiveCamera makeDefault fov={20} position={[3, 2, 5]} />
+			<OrbitControls maxPolarAngle={1.85} />
+			<PerspectiveCamera makeDefault fov={20} position={[2, 2, 4]} />
 
 			<mesh>
 				<boxGeometry args={[1, 1, 1]} />

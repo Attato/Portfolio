@@ -5,25 +5,6 @@ import Footer from 'components/footer/footer';
 import { tabs } from './api/tabs'
 import { motion } from 'framer-motion';
 
-const variants = {
-	enter: () => {
-		return {
-			x: -1000,
-			opacity: 0
-		};
-	},
-	center: {
-		x: 0,
-		opacity: 1
-	},
-	exit: () => {
-		return {
-			x: -1000,
-			opacity: 0
-		};
-	}
-};
-
 const Home = () => {
 
 	const [[page], setPage] = useState([0, 0]);
@@ -63,13 +44,9 @@ const Home = () => {
 				</div>	
 				<motion.div
 					key={page}					
-					variants={variants}
-					initial="enter"
-					animate="center"							
-					transition={{
-					x: { type: "spring", stiffness: 300, damping: 30, duration: 2 },
-					opacity: { duration: 0.2 }
-					}}								
+					initial={{ y: 10, opacity: 0 }}
+					animate={{ y: 0, opacity: 1 }}
+					transition={{ duration: 0.8, delay: 0 }}						
 				>								
 					{tabs[page].wrap}
 				</motion.div>				
