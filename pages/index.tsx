@@ -31,7 +31,6 @@ const Home = () => {
 						className={isActive ? "hover" : ""}
 					>	
 						{title}
-						{isActive ? <motion.div className="underline" layoutId="underline"/> : null}
 					</a>
 					);
 				})}
@@ -58,4 +57,3 @@ const Home = () => {
 };
 
 export default Home;
-
