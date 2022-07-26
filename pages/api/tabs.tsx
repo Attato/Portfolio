@@ -13,7 +13,7 @@ const Home = (
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Home page</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                <span>Hello! You are on the main page of my current projects repository. After you play with the 3d model, you can go to the next page using the tabs on top.</span>
                 <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
             </div>
 
