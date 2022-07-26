@@ -2,24 +2,11 @@ import React, { Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei';
+import Character from './Character'
 
 const startDate: Date = new Date('2021-01-11');
 const differenceDate: Date = new Date(+new Date() - +startDate);
-
-const Character = () => {
-	return(
-		<>
-			<OrbitControls maxPolarAngle={1.85} />
-			<PerspectiveCamera makeDefault fov={20} position={[2, 2, 4]} />
-
-			<mesh>
-				<boxGeometry args={[1, 1, 1]} />
-				<meshBasicMaterial color={"white"} />
-			</mesh>
-		</>
-	);
-}
 
 const Home = (
     <div className="body" key={Date.now()}>
@@ -30,11 +17,14 @@ const Home = (
                 <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
             </div>
 
-            <Suspense>
-                <Canvas>
+            <Canvas>
+                <ambientLight/>
+                <pointLight position={[1, 3, 2]}/>
+                <OrbitControls/>
+                <Suspense fallback={null}>
                     <Character/>
-                </Canvas>
-            </Suspense>
+                </Suspense>
+            </Canvas>
         </div>
     </div>
 )
@@ -48,11 +38,14 @@ const About = (
                 <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
             </div>
 
-            <Suspense fallback={null}>
-                <Canvas className="canvas" shadows>
+            <Canvas>
+                <ambientLight/>
+                <pointLight/>
+                <OrbitControls/>
+                <Suspense fallback={null}>
                     <Character/>
-                </Canvas>
-            </Suspense>
+                </Suspense>
+            </Canvas>
         </div>
     </div>
 )
@@ -98,11 +91,14 @@ const Contact = (
                 <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
             </div>
 
-            <Suspense fallback={null}>
-                <Canvas className="canvas" shadows>
+            <Canvas>
+                <ambientLight/>
+                <pointLight/>
+                <OrbitControls/>
+                <Suspense fallback={null}>
                     <Character/>
-                </Canvas>
-            </Suspense>
+                </Suspense>
+            </Canvas>
         </div>
     </div>
 )

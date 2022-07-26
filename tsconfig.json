@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/index.tsx"
-  ],
+, "components/voxel-me/me.js"  ],
   "exclude": [
     "node_modules"
   ]
