@@ -105,11 +105,31 @@
                 margin-top: 40px;
                 max-width: 600px;
                 width: 100%;
-                margin: auto;
-            }
-            
-            h1:first-child{
-                margin-top: 0;
+                margin: 0 auto;     
+                   
+                .setup_anchor{
+					position: absolute;
+					visibility: hidden;
+					margin-top: -120px;
+					padding-top: 120px;
+				}
+
+				a {
+					margin-right: 0.5rem;
+
+					&:hover{
+						border-bottom: 1px dotted;
+					}
+	
+					&:hover~.permalink{
+						visibility: visible;
+					}
+				}
+			
+				.permalink {
+					display: inline-block;
+					visibility: hidden;
+				}      
             }
     
             p{
@@ -119,10 +139,18 @@
                 width: 100%;
                 margin: auto;
             }
+
+            img{
+                user-select: none;
+            }
         }
         
         .project:first-child{
             padding: 0 0 50px 0;
+
+            h1{
+                margin-top: 0;
+            }
         }
         
         .project:last-child{

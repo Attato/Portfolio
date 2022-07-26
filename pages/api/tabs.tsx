@@ -19,7 +19,7 @@ const Home = (
 
             <Canvas>
                 <ambientLight/>
-                <pointLight position={[1, 3, 2]}/>
+                <pointLight/>
                 <OrbitControls/>
                 <Suspense fallback={null}>
                     <Character/>
@@ -55,21 +55,39 @@ const Portfolio = (
         <div className="row__projects">
 
             <div className="project">
-                <h1>AirPort</h1>
+                <h1>
+                    <span id="prj1" className="setup_anchor"></span>
+                    <a href="#prj1">Lorem</a>
+                    <span className="permalink">
+                        <Image src="/permalink.svg" alt="" width={18} height={18} />
+                    </span>
+                </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
                 <Image src="/airport.jpg" width={650} height={370} /> 
                 <p>This site... Lorem ipsum dolor sit amet</p>
             </div>
             
             <div className="project">
-                <h1>AirPort</h1>
+                <h1>
+                    <span id="prj2" className="setup_anchor"></span>
+                    <a href="#prj2">Lorem</a>
+                    <span className="permalink">
+                        <Image src="/permalink.svg" alt="" width={18} height={18} />
+                    </span>
+                </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
                 <Image src="/airport.jpg" width={650} height={370} /> 
                 <p>This site... Lorem ipsum dolor sit amet</p>
             </div>
             
             <div className="project">
-                <h1>AirPort</h1>
+                <h1>
+                    <span id="prj3" className="setup_anchor"></span>
+                    <a href="#prj3">Lorem</a>
+                    <span className="permalink">
+                        <Image src="/permalink.svg" alt="" width={18} height={18} />
+                    </span>
+                </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
                 <Image src="/airport.jpg" width={650} height={370} /> 
                 <p>This site... Lorem ipsum dolor sit amet</p>
