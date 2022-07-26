@@ -16,6 +16,7 @@ const Header = ( ) => {
                     </span>
                     <h1 className={styles.logo}>Attato</h1>
                     <div className={styles.mail}><Link href="mailto:rde8519@mail.ru"><a>rde8519@mail.ru</a></Link></div>
+                    <div className={styles.mobile__mail}><Link href="mailto:rde8519@mail.ru"><a>@mail</a></Link></div>
                 </div>
             </header>
         </>

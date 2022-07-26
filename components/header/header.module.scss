@@ -37,12 +37,26 @@
             margin: 0;
         }
 
-        .mail {
+        .mail, .mobile__mail {
             display: flex;
             justify-content: flex-end;
             max-width: calc(100% / 3);
             width: 100%;
             color: #b7bdc2;
         }
+
+        .mobile__mail{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) { 
+    .mail{
+        display: none !important;
+    }
+
+    .mobile__mail{
+        display: flex !important;
     }
 }
