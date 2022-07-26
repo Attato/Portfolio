@@ -52,31 +52,32 @@ const About = (
 
 const Portfolio = (
     <div className="body" key={Date.now()}>
-        <div className="home__welcome">
-            <div className="sticky__wrap">
-                <h1>Projects</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>     
+        <div className="row__projects">
+
+            <div className="project">
+                <h1>AirPort</h1>
+                <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
+                <Image src="/airport.jpg" width={650} height={370} /> 
+                <p>This site... Lorem ipsum dolor sit amet</p>
             </div>
-            <div className="home__welcome-projects">
+            
+            <div className="project">
                 <h1>AirPort</h1>
-                <span>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>                    
+                <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
                 <Image src="/airport.jpg" width={650} height={370} /> 
-                <span>This site... Lorem ipsum dolor sit amet</span>
-
+                <p>This site... Lorem ipsum dolor sit amet</p>
+            </div>
+            
+            <div className="project">
                 <h1>AirPort</h1>
-                <span>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>                    
+                <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
                 <Image src="/airport.jpg" width={650} height={370} /> 
-                <span>This site... Lorem ipsum dolor sit amet</span>
-
-                <h1>AirPort</h1>
-                <span>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>                    
-                <Image src="/airport.jpg" width={650} height={370} /> 
-                <span>This site... Lorem ipsum dolor sit amet</span>
+                <p>This site... Lorem ipsum dolor sit amet</p>
                 <button><a href="/#header">Back to top ↑</a></button>
             </div>
         </div>
     </div>
+
 )
 
 const Contact = (
