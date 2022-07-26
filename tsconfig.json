@@ -27,8 +27,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/index.tsx"
-, "components/voxel-me/me.js"  ],
+    "pages/index.tsx"],
   "exclude": [
     "node_modules"
   ]

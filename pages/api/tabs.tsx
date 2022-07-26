@@ -53,7 +53,7 @@ const About = (
 const Portfolio = (
     <div className="body" key={Date.now()}>
         <div className="home__welcome">
-            <div className="home__welcome-info">
+            <div className="sticky__wrap">
                 <h1>Projects</h1>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
                 <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>     

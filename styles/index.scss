@@ -49,7 +49,7 @@
         height: 100%;
         margin: auto;
     
-        .home__welcome-info{
+        .home__welcome-info, .sticky__wrap{
             max-width: 380px;
             width: 100%;
             height: 100%;
@@ -58,8 +58,6 @@
             justify-content: flex-start;
             gap: 25px;
             padding-top: 200px;
-            position: sticky;
-            top: 0;
                        
             span{
                 font-size: 16px;
@@ -78,8 +76,13 @@
             }
         }
 
+        .sticky__wrap{
+            position: sticky;
+            top: 0;
+        }
+
         canvas{
-            height: 662px;
+            height: 650px;
             cursor: pointer;
         
             &:active{
@@ -118,13 +121,31 @@
     }
 }
 
-@media screen and (max-width: 1024) { 
-    .body{
-        .home__welcome{
-            
-            canvas{
-                height: 250px !important;    
-            }
-        }
+@media screen and (max-width: 1024px) { 
+    .home__welcome-projects{
+        margin-top: 50px !important;
+        width: 100%;
+    }
+
+    .sticky__wrap{
+        padding-top: 100px !important;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .home__welcome{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .home__welcome-info{
+        padding: 0 !important;
+        align-items: center;
+        text-align: center;
+        gap: 20px !important;
+    }
+
+    canvas{
+        height: 325px !important;
     }
 }
