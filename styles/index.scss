@@ -69,10 +69,22 @@
                 margin: 0;
             }
 
-            .social__link{
+            .contact__links{
                 display: flex;
-                align-items: flex-end;
+                flex-direction: column;
                 gap: 10px;
+
+                .contact__block{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .social__link{
+                        display: flex;
+                        align-items: flex-end;
+                        gap: 10px;
+                    }
+                }
             }
         }
 
@@ -91,7 +103,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 100px auto 0;
+        margin: 50px auto 0;
         max-width: 690px;
         
         .project{
@@ -187,6 +199,10 @@
         align-items: center;
         text-align: center;
         gap: 20px !important;
+
+        .contact__links{
+            flex-direction: row !important;
+        }
     }
 
     canvas{
