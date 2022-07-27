@@ -5,8 +5,11 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei';
 import Character from './Character'
 
-const startDate: Date = new Date('2021-01-11');
-const differenceDate: Date = new Date(+new Date() - +startDate);
+const birthday: Date = new Date('2002-09-30')
+const dateOfBecoming: Date = new Date('2021-01-11');
+const betweenBirthday: Date = new Date(+new Date() - +birthday);
+const betweenBecoming: Date = new Date(+new Date() - +dateOfBecoming);
+
 
 const Home = (
     <div className="body" key={Date.now()}>
@@ -14,7 +17,7 @@ const Home = (
             <div className="home__welcome-info">
                 <h1>Home page</h1>
                 <span>Hello! You are on the main page of my current projects repository. After you play with the 3d model, you can go to the next page using the tabs on top.</span>
-                <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
+                <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
             </div>
 
             <Canvas>
@@ -34,8 +37,8 @@ const About = (
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Page about me</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
+                <span>I am {((+betweenBirthday.toISOString().slice(0, 4) - 1970))} years old.</span>
+                <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
             </div>
 
             <Canvas>
@@ -112,11 +115,11 @@ const Contact = (
 
                     <div className="contact__block">
                         <Link href="https://github.com/Attato"><a className="social__link" target="blank"><Image src="/github.svg" alt="" width={20} height={20}/><span>GitHub</span></a></Link>
-                        <Link href="mailto:rde8519@mail.ru"><a className="social__link"><Image src="/email.svg" alt="" width={20} height={20}/><span>Mail</span></a></Link>
+                        <Link href="mailto:rde8519@mail.ru"><a className="social__link"><Image src="/email.svg" alt="" width={20} height={20}/><span>Mцail</span></a></Link>
                     </div>
                 </div>
 
-                <p className="date">Frontend developer: {((+differenceDate.toISOString().slice(0, 4) - 1970) + "y " + (differenceDate.getMonth()) + "m " + differenceDate.getDate() + "d.")}</p>
+                <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
             </div>
 
             <Canvas>
