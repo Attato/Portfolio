@@ -37,7 +37,7 @@ const About = (
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Page about me</h1>
-                <span>I am {((+betweenBirthday.toISOString().slice(0, 4) - 1970))} years old.</span>
+                <span>I am {((+betweenBirthday.toISOString().slice(0, 4) - 1970))} year old frontend developer from <br/> St. Petersburg. I write my projects on next.js using typescript and styling everything with scss. Also I well know adobe photoshop, blender and figma.</span>
                 <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
             </div>
 
@@ -60,14 +60,14 @@ const Portfolio = (
             <div className="project">
                 <h1>
                     <span id="prj1" className="setup_anchor"></span>
-                    <a href="#prj1">Lorem</a>
+                    <a href="#prj1">Sale of air tickets</a>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <Image src="/airport.jpg" width={650} height={370} /> 
-                <p>This site... Lorem ipsum dolor sit amet</p>
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" width={650} height={370}/></a>
+                <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
             
             <div className="project">
@@ -79,21 +79,34 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <Image src="/airport.jpg" width={650} height={370} /> 
-                <p>This site... Lorem ipsum dolor sit amet</p>
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" width={650} height={370}/></a>
+                <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
             
             <div className="project">
                 <h1>
                     <span id="prj3" className="setup_anchor"></span>
-                    <a href="#prj3">Lorem</a>
+                    <a href="#prj3">Mini apps</a>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <Image src="/airport.jpg" width={650} height={370} /> 
-                <p>This site... Lorem ipsum dolor sit amet</p>
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" width={650} height={370}/></a>
+                <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
+            </div>
+
+            <div className="project">
+                <h1>
+                    <span id="prj4" className="setup_anchor"></span>
+                    <a href="#prj4">Games</a>
+                    <span className="permalink">
+                        <Image src="/permalink.svg" alt="" width={18} height={18} />
+                    </span>
+                </h1>
+                <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" width={650} height={370}/></a>
+                <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
                 <button><a href="/#header">Back to top ↑</a></button>
             </div>
         </div>
@@ -115,7 +128,7 @@ const Contact = (
 
                     <div className="contact__block">
                         <Link href="https://github.com/Attato"><a className="social__link" target="blank"><Image src="/github.svg" alt="" width={20} height={20}/><span>GitHub</span></a></Link>
-                        <Link href="mailto:rde8519@mail.ru"><a className="social__link"><Image src="/email.svg" alt="" width={20} height={20}/><span>Mцail</span></a></Link>
+                        <Link href="mailto:rde8519@mail.ru"><a className="social__link"><Image src="/email.svg" alt="" width={20} height={20}/><span>Mail</span></a></Link>
                     </div>
                 </div>
 
