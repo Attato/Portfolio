@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Head from 'next/head';
 import Header from 'components/header/header';
 import Footer from 'components/footer/footer';
 import { tabs } from './api/tabs'
@@ -11,13 +10,6 @@ const Home = () => {
 
 	return (
 		<motion.div initial="hidden" whileInView="visible">
-			<Head>
-                <title>Главная</title>
-                <meta name="description" content="" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
-
 			<Header />
 			<div className="sub">
 				{tabs.map(({ title }, i) => {

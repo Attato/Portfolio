@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei';
 import Character from './Character'
@@ -13,6 +14,13 @@ const betweenBecoming: Date = new Date(+new Date() - +dateOfBecoming);
 
 const Home = (
     <div className="body" key={Date.now()}>
+
+        <Head>
+            <title>Home Page</title>
+            <meta name="description" content="" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Home page</h1>
@@ -34,6 +42,13 @@ const Home = (
 
 const About = (
     <div className="body" key={Date.now()}>
+        
+        <Head>
+            <title>About me</title>
+            <meta name="description" content="" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Page about me</h1>
@@ -55,6 +70,13 @@ const About = (
 
 const Portfolio = (
     <div className="body" key={Date.now()}>
+
+        <Head>
+            <title>Portfolio</title>
+            <meta name="description" content="" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className="row__projects">
 
             <div className="project">
@@ -116,6 +138,13 @@ const Portfolio = (
 
 const Contact = (
     <div className="body" key={Date.now()}>
+
+        <Head>
+            <title>Contact</title>
+            <meta name="description" content="" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Contact me</h1>
