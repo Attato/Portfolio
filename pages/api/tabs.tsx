@@ -114,7 +114,7 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" alt="" width={650} height={370}/></a>
+                <a href="https://mini-apps-attato.vercel.app/" target="blank"><Image src="/airport.jpg" alt="" width={650} height={370}/></a>
                 <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
 
@@ -127,7 +127,7 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <Link href="https://github.com/Attato/AirTickets" target="blank"><a><Image src="/airport.jpg" alt="" width={650} height={370}/></a></Link>
+                <Link href="https://mini-games-attato.vercel.app/" target="blank"><a><Image src="/airport.jpg" alt="" width={650} height={370}/></a></Link>
                 <p>This site... Lorem ipsum dolor sit amet <Link href="https://koffemeow.github.io/AirTickets"><a>https://koffemeow.github.io/AirTickets</a></Link></p>
                 <button><Link href="/#header"><a>Back to top ↑</a></Link></button>
             </div>
