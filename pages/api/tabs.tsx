@@ -82,58 +82,57 @@ const Portfolio = (
             <div className="project">
                 <h1>
                     <span id="prj1" className="setup_anchor"></span>
-                    <a href="#prj1">Sale of air tickets</a>
+                    <Link href="#prj1"><a>Sale of air tickets</a></Link>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" width={650} height={370}/></a>
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" alt="" width={650} height={370}/></a>
                 <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
             
             <div className="project">
                 <h1>
                     <span id="prj2" className="setup_anchor"></span>
-                    <a href="#prj2">Lorem</a>
+                    <Link href="#prj2"><a>Lorem</a></Link>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" width={650} height={370}/></a>
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" alt="" width={650} height={370}/></a>
                 <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
             
             <div className="project">
                 <h1>
                     <span id="prj3" className="setup_anchor"></span>
-                    <a href="#prj3">Mini apps</a>
+                    <Link href="#prj3"><a>Mini apps</a></Link>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" width={650} height={370}/></a>
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" alt="" width={650} height={370}/></a>
                 <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
 
             <div className="project">
                 <h1>
                     <span id="prj4" className="setup_anchor"></span>
-                    <a href="#prj4">Games</a>
+                    <Link href="#prj4"><a>Games</a></Link>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" width={650} height={370}/></a>
-                <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
-                <button><a href="/#header">Back to top ↑</a></button>
+                <Link href="https://github.com/Attato/AirTickets" target="blank"><a><Image src="/airport.jpg" alt="" width={650} height={370}/></a></Link>
+                <p>This site... Lorem ipsum dolor sit amet <Link href="https://koffemeow.github.io/AirTickets"><a>https://koffemeow.github.io/AirTickets</a></Link></p>
+                <button><Link href="/#header"><a>Back to top ↑</a></Link></button>
             </div>
         </div>
     </div>
-
 )
 
 const Contact = (
