@@ -5,7 +5,7 @@ import { GLTF } from 'three-stdlib';
 
 type GLTFResult = GLTF & {
 	nodes: {
-		me1: THREE.Mesh;
+		me: THREE.Mesh;
 	};
 	materials: {
 		palette: THREE.MeshStandardMaterial;
@@ -18,11 +18,11 @@ const Character = ({ ...props }: JSX.IntrinsicElements['group']) => {
 	return (
 		<group ref={group} {...props} dispose={null}>
 			<mesh
-				geometry={nodes.me1.geometry}
+				geometry={nodes.me.geometry}
 				material={materials.palette}
 				rotation={[Math.PI / 2, 0, 0.35]}
-				position={[-1, -3, 0]}
-				scale={0.6}
+				position={[-7, -9, 2.8]}
+				scale={5.5}
 			/>
 		</group>
 	);

@@ -31,7 +31,7 @@ const Home = (
             <Canvas>
                 <ambientLight/>
                 <pointLight/>
-                <OrbitControls/>
+                <OrbitControls />
                 <Suspense fallback={null}>
                     <Character/>
                 </Suspense>
