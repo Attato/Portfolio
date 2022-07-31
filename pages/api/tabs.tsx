@@ -59,7 +59,7 @@ const About = (
             <Canvas>
                 <ambientLight/>
                 <pointLight/>
-                <OrbitControls/>
+                <OrbitControls enableZoom={false} rotateSpeed={0.7} />
                 <Suspense fallback={null}>
                     <Character/>
                 </Suspense>
@@ -166,7 +166,7 @@ const Contact = (
             <Canvas>
                 <ambientLight/>
                 <pointLight/>
-                <OrbitControls/>
+                <OrbitControls enableZoom={false} rotateSpeed={0.7} />
                 <Suspense fallback={null}>
                     <Character/>
                 </Suspense>
