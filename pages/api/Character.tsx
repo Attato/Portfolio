@@ -21,8 +21,8 @@ const Character = ({ ...props }: JSX.IntrinsicElements['group']) => {
 				geometry={nodes.me.geometry}
 				material={materials.palette}
 				rotation={[Math.PI / 2, 0, 0.35]}
-				position={[-7, -9, 2.8]}
-				scale={5.5}
+				position={[-6.6, -8, 3]}
+				scale={5}
 			/>
 		</group>
 	);
