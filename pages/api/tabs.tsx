@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 import { Canvas } from '@react-three/fiber'
-import { PresentationControls } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import Character from './Character'
 
 const birthday: Date = new Date('2002-09-30')
@@ -31,11 +31,10 @@ const Home = (
             <Canvas>
                 <ambientLight/>
                 <pointLight/>
-                <PresentationControls global zoom={0.8} polar={[0, Math.PI / 4]} >
-                    <Suspense fallback={null}>
-                        <Character/>
-                    </Suspense>
-                </PresentationControls>
+                <OrbitControls enableZoom={false} rotateSpeed={0.7} />
+                <Suspense fallback={null}>
+                    <Character/>
+                </Suspense>
             </Canvas>
         </div>
     </div>
@@ -60,7 +59,7 @@ const About = (
             <Canvas>
                 <ambientLight/>
                 <pointLight/>
-                <PresentationControls/>
+                <OrbitControls/>
                 <Suspense fallback={null}>
                     <Character/>
                 </Suspense>
@@ -167,7 +166,7 @@ const Contact = (
             <Canvas>
                 <ambientLight/>
                 <pointLight/>
-                <PresentationControls/>
+                <OrbitControls/>
                 <Suspense fallback={null}>
                     <Character/>
                 </Suspense>
