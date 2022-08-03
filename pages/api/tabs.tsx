@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei';
-import Character from './Character'
+import Model from './Me'
 
 const birthday: Date = new Date('2002-09-30')
 const dateOfBecoming: Date = new Date('2021-01-11');
@@ -29,11 +29,9 @@ const Home = (
             </div>
 
             <Canvas>
-                <ambientLight/>
-                <pointLight/>
-                <OrbitControls enableZoom={false} rotateSpeed={0.7} />
+           <OrbitControls enableZoom={false} rotateSpeed={0.7} />
                 <Suspense fallback={null}>
-                    <Character/>
+                    <Model/>
                 </Suspense>
             </Canvas>
         </div>
@@ -61,7 +59,7 @@ const About = (
                 <pointLight/>
                 <OrbitControls enableZoom={false} rotateSpeed={0.7} />
                 <Suspense fallback={null}>
-                    <Character/>
+                    <Model/>
                 </Suspense>
             </Canvas>
         </div>
@@ -168,7 +166,7 @@ const Contact = (
                 <pointLight/>
                 <OrbitControls enableZoom={false} rotateSpeed={0.7} />
                 <Suspense fallback={null}>
-                    <Character/>
+                    <Model/>
                 </Suspense>
             </Canvas>
         </div>
