@@ -4,13 +4,8 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei';
+import { betweenBirthday, betweenBecoming } from './date'
 import Character from './Me'
-
-const birthday: Date = new Date('2002-09-30')
-const dateOfBecoming: Date = new Date('2021-01-11');
-const betweenBirthday: Date = new Date(+new Date() - +birthday);
-const betweenBecoming: Date = new Date(+new Date() - +dateOfBecoming);
-
 
 const Home = (
     <div className="body" key={Date.now()}>
@@ -24,7 +19,7 @@ const Home = (
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Home page</h1>
-                <span>Hello! You are on the main page of my current projects repository. After you play with the 3d model, you can go to the next page using the tabs on top.</span>
+                <span>Hello! Welcome to my portfolio. In this place you can learn something about me and my projects.</span>
                 <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
             </div>
 
@@ -52,8 +47,8 @@ const About = (
         <div className="home__welcome">
             <div className="home__welcome-info">
                 <h1>Page about me</h1>
-                <span>I am {((+betweenBirthday.toISOString().slice(0, 4) - 1970))} year old frontend developer from <br/> St. Petersburg. I write my projects on next.js using typescript and styling everything with scss. Also I well know adobe photoshop, blender and figma.</span>
-                <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
+                <span>I have experience in Frontend development, I mainly develop applications myself. I have experience with Vue, but I enjoy developing React with TypeScript.</span>
+                <span className="read__more">Read More <Image src="/arrow.svg" alt="" width={16} height={16} /></span>
             </div>
 
             <Canvas>

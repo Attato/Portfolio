@@ -18,7 +18,7 @@ const Home = () => {
 	}, [page])
 
 	return (
-		<motion.div initial="hidden" whileInView="visible" translate="no">
+		<motion.div initial="hidden" whileInView="visible" >
 			<Header />
 			<div className="sub">
 				{tabs.map(({ title }, i) => {

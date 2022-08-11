@@ -20,7 +20,7 @@
         font-size: 13px;
         color: #b7bdc2;
         cursor: pointer;
-        transition: all 0.4s;
+        transition: all .4s;
 
         &:hover {
             color: white;
@@ -63,7 +63,18 @@
             span {
                 font-size: 16px;
                 color: #acacac;
-                line-height: 1.2;
+                line-height: 1.2;             
+            }
+            
+            .read__more {
+                display: flex;
+                align-items: flex-start;
+                gap: 5px;
+                cursor: pointer;
+
+                span {
+                    transform: rotate(90deg);                  
+                }
             }
             
             .date {
@@ -85,6 +96,14 @@
                         display: flex;
                         align-items: flex-end;
                         gap: 10px;
+
+                        span {
+                            transition: all .2s;
+
+                            &:hover {
+                                color: white;
+                            }
+                        }
                     }
                 }
             }
@@ -160,7 +179,7 @@
                 }
             }
 
-            a{
+            a {
                 span {
                     user-select: none;
                     width: 100% !important;
