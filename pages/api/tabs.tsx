@@ -4,8 +4,8 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei';
-import { betweenBirthday, betweenBecoming } from './date'
-import Character from './Me'
+import { betweenBecoming } from './date'
+import DefaultMe from './meDefault'
 
 const Home = (
     <div className="body" key={Date.now()}>
@@ -28,7 +28,7 @@ const Home = (
                 <pointLight/>
                 <OrbitControls enableZoom={false} rotateSpeed={0.7} />
                 <Suspense fallback={null}>
-                    <Character/>
+                    <DefaultMe/>
                 </Suspense>
             </Canvas>
         </div>
@@ -56,7 +56,7 @@ const About = (
                 <pointLight/>
                 <OrbitControls enableZoom={false} rotateSpeed={0.7} />
                 <Suspense fallback={null}>
-                    <Character/>
+                    <DefaultMe/>
                 </Suspense>
             </Canvas>
         </div>
@@ -77,13 +77,13 @@ const Portfolio = (
             <div className="project">
                 <h1>
                     <span id="prj1" className="setup_anchor"></span>
-                    <Link href="#prj1"><a>Sale of air tickets</a></Link>
+                    <Link href="#prj1"><a>Air tickets</a></Link>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" alt="" width={650} height={370}/></a>
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/null.png" alt="" width={690} height={370}/></a>
                 <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
             
@@ -96,7 +96,7 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/airport.jpg" alt="" width={650} height={370}/></a>
+                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/null.png" alt="" width={690} height={370}/></a>
                 <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
             
@@ -109,7 +109,7 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://mini-apps-attato.vercel.app/" target="blank"><Image src="/airport.jpg" alt="" width={650} height={370}/></a>
+                <a href="https://mini-apps-attato.vercel.app/" target="blank"><Image src="/mini_games.png" alt="" width={690} height={370}/></a>
                 <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
             </div>
 
@@ -122,7 +122,7 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <Link href="https://mini-games-attato.vercel.app/" target="blank"><a><Image src="/airport.jpg" alt="" width={650} height={370}/></a></Link>
+                <Link href="https://mini-games-attato.vercel.app/" target="blank"><a><Image src="/mini_games.png" alt="" width={690} height={370}/></a></Link>
                 <p>This site... Lorem ipsum dolor sit amet <Link href="https://koffemeow.github.io/AirTickets"><a>https://koffemeow.github.io/AirTickets</a></Link></p>
                 <button><Link href="/#header"><a>Back to top ↑</a></Link></button>
             </div>
@@ -163,7 +163,7 @@ const Contact = (
                 <pointLight/>
                 <OrbitControls enableZoom={false} rotateSpeed={0.7} />
                 <Suspense fallback={null}>
-                    <Character/>
+                    <DefaultMe/>
                 </Suspense>
             </Canvas>
         </div>

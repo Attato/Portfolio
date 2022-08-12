@@ -12,7 +12,7 @@ type GLTFResult = GLTF & {
 	};
 };
 
-const Character = ({ ...props }: JSX.IntrinsicElements['group']) => {
+const DefaultMe = ({ ...props }: JSX.IntrinsicElements['group']) => {
 	const group = useRef<THREE.Group>();
 	const { nodes, materials } = useGLTF('/me.glb') as GLTFResult;
 	return (
@@ -30,4 +30,4 @@ const Character = ({ ...props }: JSX.IntrinsicElements['group']) => {
 
 useGLTF.preload('/me.glb');
 
-export default Character;
+export default DefaultMe;
