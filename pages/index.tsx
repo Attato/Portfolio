@@ -10,7 +10,6 @@ const Home = () => {
 
 	useEffect(() => {
 		setPage(JSON.parse(localStorage.getItem('page number')));
-		console.log(JSON.parse(localStorage.getItem('page number')));
 	}, [])
 	
 	useEffect(() => {
@@ -18,7 +17,7 @@ const Home = () => {
 	}, [page])
 
 	return (
-		<motion.div initial="hidden" whileInView="visible" >
+		<motion.div initial="hidden" whileInView="visible" translate="no" >
 			<Header />
 			<div className="sub">
 				{tabs.map(({ title }, i) => {
