@@ -181,8 +181,10 @@
 
             a {
                 span {
+                    // image
                     user-select: none;
-                    width: 100% !important;
+                    border-radius: 6px;
+                    box-shadow: 0 0.5px 5px rgba(0, 0, 0, 0.2);
                 }
             }
         }
