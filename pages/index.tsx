@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
 
-	const [[page], setPage] = useState([0, 0]);
+	const [page, setPage] = useState(0);
 
 	useEffect(() => {
 		setPage(JSON.parse(localStorage.getItem('page number')));
@@ -20,15 +20,15 @@ const Home = () => {
 		<motion.div initial="hidden" whileInView="visible" translate="no" >
 			<Header />
 			<div className="sub">
-				{tabs.map(({ title }, i) => {
-					const isActive = i === page;
+				{tabs.map(({ title }, wrap) => {
+					const isActive = wrap === page;
 					return (
 					<a
-						key={i}
-						onClick={() => {
-						setPage([i, i - page]);
-						}}
-						className={isActive ? "hover" : ""}
+					key={wrap}
+					onClick={() => {
+						setPage(wrap);
+					}}
+						className={isActive ? "active__tab" : ""}
 					>	
 						{title}
 					</a>
