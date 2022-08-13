@@ -73,11 +73,11 @@ const Portfolio = (
         </Head>
 
         <div className="row__projects">
-
+            
             <div className="project">
                 <h1>
                     <span id="prj1" className="setup_anchor"></span>
-                    <Link href="#prj1"><a>Air tickets</a></Link>
+                    <Link href="#prj1"><a>Lorem</a></Link>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
@@ -89,21 +89,8 @@ const Portfolio = (
             
             <div className="project">
                 <h1>
-                    <span id="prj2" className="setup_anchor"></span>
-                    <Link href="#prj2"><a>Lorem</a></Link>
-                    <span className="permalink">
-                        <Image src="/permalink.svg" alt="" width={18} height={18} />
-                    </span>
-                </h1>
-                <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/null.png" alt="" width={690} height={370}/></a>
-                <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
-            </div>
-            
-            <div className="project">
-                <h1>
-                    <span id="prj3" className="setup_anchor"></span>
-                    <Link href="#prj3"><a>Mini apps</a></Link>
+                    <span id="miniApps" className="setup_anchor"></span>
+                    <Link href="#miniApps"><a>Mini apps</a></Link>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
@@ -115,8 +102,8 @@ const Portfolio = (
 
             <div className="project">
                 <h1>
-                    <span id="prj4" className="setup_anchor"></span>
-                    <Link href="#prj4"><a>Games</a></Link>
+                    <span id="miniGames" className="setup_anchor"></span>
+                    <Link href="#miniGames"><a>Mini games</a></Link>
                     <span className="permalink">
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
