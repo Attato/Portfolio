@@ -93,25 +93,25 @@ const About = (
 
                 <pre className="pre_language_json">
                     <code className="code_language_json">
-                        <span className="token_property">"scripts"</span>
+                        <span className="token_property">&quot;scripts&quot;</span>
                         <span className="token_operator">: </span> 
                         <span className="token_punctuation">&#123;<br /></span>
                         <div className="token_space">
-                            <span className="token_property">"dev"</span>
+                            <span className="token_property">&quot;dev&quot;</span>
                             <span className="token_operator">: </span> 
-                            <span className="token_string">"next dev"</span>
+                            <span className="token_string">&quot;next dev&quot;</span>
                             <span className="token_punctuation">,<br /></span>
-                            <span className="token_property">"build"</span>
+                            <span className="token_property">&quot;build&quot;</span>
                             <span className="token_operator">: </span> 
-                            <span className="token_string">"next build"</span>
+                            <span className="token_string">&quot;next build&quot;</span>
                             <span className="token_punctuation">,<br /></span>
-                            <span className="token_property">"start"</span>
+                            <span className="token_property">&quot;start&quot;</span>
                             <span className="token_operator">: </span> 
-                            <span className="token_string">"next start"</span>
+                            <span className="token_string">&quot;next start&quot;</span>
                             <span className="token_punctuation">,<br /></span>
-                            <span className="token_property">"lint"</span>
+                            <span className="token_property">&quot;lint&quot;</span>
                             <span className="token_operator">: </span> 
-                            <span className="token_string">"next lint"<br /></span>
+                            <span className="token_string">&quot;next lint&quot;<br /></span>
                         </div>
                         <span className="token_punctuation">&#125;</span>
                     </code>
@@ -122,55 +122,55 @@ const About = (
                     <li className="list_item"><code className="inline">`dev`</code> - Runs <code className="inline">`next dev`</code> to start Next.js in development mode.</li>
                     <li className="list_item"><code className="inline">`build`</code> - Runs <code className="inline">`next build`</code> to build the application for production usage.</li>
                     <li className="list_item"><code className="inline">`start`</code> - Runs <code className="inline">`next start`</code> to start a Next.js production server.</li>
-                    <li className="list_item"><code className="inline">`lint`</code> - Runs <code className="inline">`next lint`</code> to set up Next.js' built-in ESLint configuration.</li>
+                    <li className="list_item"><code className="inline">`lint`</code> - Runs <code className="inline">`next lint`</code> to set up Next.js built-in ESLint configuration.</li>
                 </ul>
                 <p>Then look at the content of the <code className="inline">`dependencies`</code>:</p>
                 <pre className="pre_language_json">
                     <code className="code_language_json">
-                        <span className="token_property">"dependencies"</span>
+                        <span className="token_property">&quot;dependencies&quot;</span>
                         <span className="token_operator">: </span> 
                         <span className="token_punctuation">&#123;<br /></span>
 
                         <div className="token_space">
 
-                            <span className="token_property">"@react-three/drei"</span>
+                            <span className="token_property">&quot;@react-three/drei&quot;</span>
                             <span className="token_operator">:</span> 
-                            <span className="token_string">"^9.17.3"</span>
+                            <span className="token_string">&quot;^9.17.3&quot;</span>
                             <span className="token_punctuation">,<br /></span>
 
-                            <span className="token_property">"@react-three/fiber"</span>
+                            <span className="token_property">&quot;@react-three/fiber&quot;</span>
                             <span className="token_operator">:</span> 
-                            <span className="token_string">"^8.2.1"</span>
+                            <span className="token_string">&quot;^8.2.1&quot;</span>
                             <span className="token_punctuation">,<br /></span>
 
-                            <span className="token_property">"framer-motion"</span>
+                            <span className="token_property">&quot;framer-motion&quot;</span>
                             <span className="token_operator">:</span> 
-                            <span className="token_string">"^6.5.1"</span>
+                            <span className="token_string">&quot;^6.5.1&quot;</span>
                             <span className="token_punctuation">,<br /></span>
                             
-                            <span className="token_property">"next"</span>
+                            <span className="token_property">&quot;next&quot;</span>
                             <span className="token_operator">:</span> 
-                            <span className="token_string">"12.2.2"</span>
+                            <span className="token_string">&quot;12.2.2&quot;</span>
                             <span className="token_punctuation">,<br /></span>
 
-                            <span className="token_property">"node-sass"</span>
+                            <span className="token_property">&quot;node-sass&quot;</span>
                             <span className="token_operator">:</span> 
-                            <span className="token_string">"^7.0.1"</span>
+                            <span className="token_string">&quot;^7.0.1&quot;</span>
                             <span className="token_punctuation">,<br /></span>
 
-                            <span className="token_property">"react"</span>
+                            <span className="token_property">&quot;react&quot;</span>
                             <span className="token_operator">:</span> 
-                            <span className="token_string">"18.2.0"</span>
+                            <span className="token_string">&quot;18.2.0&quot;</span>
                             <span className="token_punctuation">,<br /></span>
 
-                            <span className="token_property">"react-dom"</span>
+                            <span className="token_property">&quot;react-dom&quot;</span>
                             <span className="token_operator">:</span> 
-                            <span className="token_string">"18.2.0"</span>
+                            <span className="token_string">&quot;18.2.0&quot;</span>
                             <span className="token_punctuation">,<br /></span>
 
-                            <span className="token_property">"typescript"</span>
+                            <span className="token_property">&quot;typescript&quot;</span>
                             <span className="token_operator">:</span> 
-                            <span className="token_string">"^4.7.4"<br /></span>
+                            <span className="token_string">&quot;^4.7.4&quot;<br /></span>
                         </div>
                         <span className="token_punctuation">&#125;</span>
                     </code>
