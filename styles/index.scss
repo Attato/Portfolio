@@ -284,7 +284,7 @@
         flex-direction: column;
         justify-content: center;
         margin: 50px auto 0;
-        max-width: 690px;
+        max-width: 400px;
         
         .project {
             padding: 50px 0;
@@ -295,10 +295,10 @@
 
             h1 {
                 margin-top: 40px;
-                max-width: 600px;
+                max-width: 380px;
                 width: 100%;
-                margin: 0 auto;     
-                text-align: center;
+                margin: 0;
+                font-size: 30px;
             
                 .setup_anchor {
 					position: absolute;
@@ -329,14 +329,13 @@
                 font-size: 16px;
                 line-height: 1.4;
                 color: #acacac;
-                max-width: 600px !important;
+                max-width: 380px;
                 width: 100%;
-                margin: auto;
+                margin: 0;
 
-                a:hover {
+                a {
                     color: #fff;
                     text-decoration: underline;
-                    transition: .4s;
                 }
             }
 

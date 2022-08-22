@@ -176,7 +176,7 @@ const About = (
                     </code>
                 </pre>
 
-                <p>Here are the dependencies associated with this project. You can find out more about the project <Link href="https://github.com/Attato/Portfolio"><a>here.</a></Link></p>
+                <p>Here are the dependencies associated with this project. You can find out more about the project <Link href="https://github.com/Attato/Portfolio" ><a target="blank">here.</a></Link></p>
 
                 <div className="button__section">
                     <button><Link href="/#header"><a>Back to top<Image src="/arrow.svg" width="16" height="16" alt="Next page"/></a></Link></button>
@@ -207,10 +207,14 @@ const Portfolio = (
                     <p>- Grab</p>
                 </div>
             </div>
+
+            <div className="home__welcome-info">
+                <h3>My works</h3>
+            </div>
         </div>
 
-        <div className="row__projects">
-            
+
+        <div className="row__projects">       
             <div className="project">
                 <h1>
                     <span id="miniApps" className="setup_anchor"></span>
@@ -219,9 +223,9 @@ const Portfolio = (
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
-                <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
+                <p>Part of the portfolio in which I store my mini-applications. You can quickly jump to the project by clicking on the picture.</p>                    
                 <a href="https://mini-apps-attato.vercel.app/" target="blank"><Image src="/mini_games.png" alt="" width={690} height={370}/></a>
-                <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
+                <p>Or look at the code <a href="https://github.com/Attato/Mini-apps" target="blank">here.</a></p>
             </div>
 
             <div className="project">
@@ -232,9 +236,9 @@ const Portfolio = (
                         <Image src="/permalink.svg" alt="" width={18} height={18} />
                     </span>
                 </h1>
-                <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
+                <p>Part of the portfolio in which I store my mini-games. You can quickly jump to the project by clicking on the picture.</p>                    
                 <Link href="https://mini-games-attato.vercel.app/" target="blank"><a><Image src="/mini_games.png" alt="" width={690} height={370}/></a></Link>
-                <p>This site... Lorem ipsum dolor sit amet <Link href="https://koffemeow.github.io/AirTickets"><a>https://koffemeow.github.io/AirTickets</a></Link></p>
+                <p>Or look at the code <a href="https://github.com/Attato/Mini-games" target="blank">here.</a></p>
                 
                 <div className="button__section">
                     <button><Link href="/#header"><a>Back to top<Image src="/arrow.svg" width="16" height="16" alt="Next page"/></a></Link></button>
