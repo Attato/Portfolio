@@ -210,6 +210,7 @@ const Portfolio = (
 
             <div className="home__welcome-info">
                 <h3>My works</h3>
+                <p>My projects will be here.</p>
             </div>
         </div>
 
@@ -270,20 +271,19 @@ const Contact = (
                 </div>
             </div>
             <div className="home__welcome-info">
-
+                <h3>Contact me</h3>
+                <p>You can contact me here.</p>
                 <div className="contact__links">
-                    <div className="contact__block">
-                        <Link href="https://vk.com/qwaqwakva"><a className="social__link" target="blank"><Image src="/vk.svg" alt="" width={20} height={20}/><span>VKontakte</span></a></Link>
-                        <Link href="https://t.me/qwaqwakwa"><a className="social__link" target="blank"><Image src="/telegram.svg" alt="" width={20} height={20}/><span>Telegram</span></a></Link>
-                    </div>
-
                     <div className="contact__block">
                         <Link href="https://github.com/Attato"><a className="social__link" target="blank"><Image src="/github.svg" alt="" width={20} height={20}/><span>GitHub</span></a></Link>
                         <Link href="mailto:rde8519@mail.ru"><a className="social__link"><Image src="/email.svg" alt="" width={20} height={20}/><span>Mail</span></a></Link>
                     </div>
-                </div>
 
-                <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
+                    <div className="contact__block">
+                        <Link href="https://vk.com/qwaqwakva"><a className="social__link" target="blank"><Image src="/vk.svg" alt="" width={20} height={20}/><span>VKontakte</span></a></Link>
+                        <Link href="https://t.me/qwaqwakwa"><a className="social__link" target="blank"><Image src="/telegram.svg" alt="" width={20} height={20}/><span>Telegram</span></a></Link>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
