@@ -1,11 +1,8 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei';
 import { betweenBecoming } from './date'
-import DefaultMe from './meDefault'
 
 const Home = (
     <div className="body" key={Date.now()}>
@@ -16,21 +13,48 @@ const Home = (
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <div className="home__welcome">
-            <div className="home__welcome-info">
-                <h1>Home page</h1>
-                <span>Hello! Welcome to my portfolio. In this place you can learn something about me and my projects.</span>
-                <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
+        <div className="body__column-wrap">
+
+            <div className="assistance">
+                <div className="assistance__row">
+                    <Image src="/mouse_left.svg" alt="" width={20} height={20}/>
+                    <p>- Rotate</p>
+                </div>
+
+                <div className="assistance__row">
+                    <Image src="/mouse_right.svg" alt="" width={20} height={20}/>
+                    <p>- Grab</p>
+                </div>
             </div>
 
-            <Canvas>
-                <ambientLight/>
-                <pointLight/>
-                <OrbitControls enableZoom={false} rotateSpeed={0.7} />
-                <Suspense fallback={null}>
-                    <DefaultMe/>
-                </Suspense>
-            </Canvas>
+            <div className="home__welcome-info">
+                <p>Hello! Welcome to my portfolio. In this place you can learn something about me and my projects.</p>
+                <p>Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
+            </div>
+            
+            <div className="section">
+                <h3>Work</h3>
+                <p>Attato is a front-end developer from St.Petersburg who is passionate about creating design and logic for developed applications.</p>
+            </div>
+
+            <div className="section">
+                    <h3>Bio</h3>
+                <div className="section__row">
+                    <span>2002</span><p>Born in Russian: Mineralnye Vody (Min-Vody).</p>
+                </div>
+
+                <div className="section__row">
+                    <span>2020</span><p>Introduction to front-end development.</p>
+                </div>
+
+                <div className="section__row">
+                    <span>2023</span><p>Сollege graduation.</p>
+                </div>
+            </div>
+
+            <div className="button__section">
+                <button>Next page <Image src="/arrow.svg" width="16" height="16" alt="Next page"/></button>
+            </div>         
         </div>
     </div>
 )
@@ -44,21 +68,12 @@ const About = (
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <div className="home__welcome">
+        <div className="body__column-wrap">
             <div className="home__welcome-info">
                 <h1>Page about me</h1>
-                <span>I have experience in Frontend development, I mainly develop applications myself. I have experience with Vue, but I enjoy developing React with TypeScript.</span>
-                <span className="read__more">Read More <Image src="/arrow.svg" alt="" width={16} height={16} /></span>
+                <p>I have experience in Frontend development, <br/> I mainly develop applications myself. <br/> I have experience with Vue, but I enjoy developing React with TypeScript.</p>
+                <p className="read__more">Read More <Image src="/arrow.svg" alt="" width={16} height={16} /></p>
             </div>
-
-            <Canvas>
-                <ambientLight/>
-                <pointLight/>
-                <OrbitControls enableZoom={false} rotateSpeed={0.7} />
-                <Suspense fallback={null}>
-                    <DefaultMe/>
-                </Suspense>
-            </Canvas>
         </div>
     </div>
 )
@@ -73,19 +88,6 @@ const Portfolio = (
         </Head>
 
         <div className="row__projects">
-            
-            <div className="project">
-                <h1>
-                    <span id="prj1" className="setup_anchor"></span>
-                    <Link href="#prj1"><a>Lorem</a></Link>
-                    <span className="permalink">
-                        <Image src="/permalink.svg" alt="" width={18} height={18} />
-                    </span>
-                </h1>
-                <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
-                <a href="https://github.com/Attato/AirTickets" target="blank"><Image src="/null.png" alt="" width={690} height={370}/></a>
-                <p>This site... Lorem ipsum dolor sit amet <a href="https://koffemeow.github.io/AirTickets">https://koffemeow.github.io/AirTickets</a></p>
-            </div>
             
             <div className="project">
                 <h1>
@@ -126,7 +128,7 @@ const Contact = (
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <div className="home__welcome">
+        <div className="body__column-wrap">
             <div className="home__welcome-info">
                 <h1>Contact me</h1>
 
@@ -144,15 +146,6 @@ const Contact = (
 
                 <p className="date">Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
             </div>
-
-            <Canvas>
-                <ambientLight/>
-                <pointLight/>
-                <OrbitControls enableZoom={false} rotateSpeed={0.7} />
-                <Suspense fallback={null}>
-                    <DefaultMe/>
-                </Suspense>
-            </Canvas>
         </div>
     </div>
 )

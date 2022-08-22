@@ -36,20 +36,51 @@
     }
 }
 
+.canvas {
+    max-width: 1300px;
+    margin: 30px auto;
+
+    canvas {
+        height: 300px;
+        cursor: pointer;
+        transform: rotate all 0;
+    
+        &:active{
+            cursor: grabbing;
+        }
+    }
+}
+
 .body {
-	min-height: calc(100vh - 150px - 100px);
     max-width: 1330px;
     margin: auto;
     padding: 0 15px 20px;
     height: 100%;
 
-    .home__welcome {
+    .body__column-wrap {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         height: 100%;
         margin: auto;
         gap: 20px;
-    
+
+        .assistance {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+            .assistance__row {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin: 0 0 0 5px;
+                    color: white;
+                }
+            }
+        }
+        
         .home__welcome-info {
             max-width: 380px;
             width: 100%;
@@ -57,13 +88,15 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            margin: auto;
+            text-align: center;
             gap: 25px;
-            padding-top: 200px;
                        
-            span {
+            p {
                 font-size: 16px;
                 color: #acacac;
-                line-height: 1.2;             
+                line-height: 1.4;         
+                margin: 0;
             }
             
             .read__more {
@@ -75,11 +108,6 @@
                 span {
                     transform: rotate(90deg);                  
                 }
-            }
-            
-            .date {
-                color: #acacac;
-                margin: 0;
             }
 
             .contact__links {
@@ -109,12 +137,62 @@
             }
         }
 
-        canvas {
-            height: 650px;
-            cursor: pointer;
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            max-width: 380px;
+            width: 100%;
+            margin: auto;
+            padding-top: 50px;
+
+            h3 {
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+                padding-bottom: 10px;
+                border-bottom: 3px solid #28292b;
+            }
+
+            p {
+                font-size: 16px;
+                color: #acacac;
+                line-height: 1.4;         
+                margin: 0;
+            }
+
+            .section__row {
+                display: flex;
+                align-items: baseline;
+                gap: 10px;
+
+                span {
+                    color: white;
+                    min-width: 4ch;
+                }
+            }
+        }     
         
-            &:active{
-                cursor: grabbing;
+        .button__section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            max-width: 380px;
+            width: 100%;
+            margin: auto;
+            padding-top: 30px;
+
+            button {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 16px;
+                padding: 0;
             }
         }
     }
@@ -138,7 +216,8 @@
                 max-width: 600px;
                 width: 100%;
                 margin: 0 auto;     
-                   
+                text-align: center;
+            
                 .setup_anchor {
 					position: absolute;
 					visibility: hidden;
@@ -166,7 +245,7 @@
     
             p {
                 font-size: 16px;
-                line-height: 1.2;
+                line-height: 1.4;
                 color: #acacac;
                 max-width: 600px !important;
                 width: 100%;
@@ -217,27 +296,5 @@
     .row-projects {
         margin-top: 50px !important;
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) { 
-    .home__welcome {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    
-    .home__welcome-info {
-        padding: 0 !important;
-        align-items: center;
-        text-align: center;
-        gap: 20px !important;
-
-        .contact__links {
-            flex-direction: row !important;
-        }
-    }
-
-    canvas {
-        height: 325px !important;
     }
 }

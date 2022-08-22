@@ -28,6 +28,4 @@ const DefaultMe = ({ ...props }: JSX.IntrinsicElements['group']) => {
 	);
 };
 
-useGLTF.preload('/me.glb');
-
 export default DefaultMe;
