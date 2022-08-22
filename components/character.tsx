@@ -1,7 +1,9 @@
 import * as THREE from 'three';
-import React, { useRef } from 'react';
+import React, { useRef, Suspense } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
 
 type GLTFResult = GLTF & {
 	nodes: {
@@ -12,7 +14,7 @@ type GLTFResult = GLTF & {
 	};
 };
 
-const DefaultMe = ({ ...props }: JSX.IntrinsicElements['group']) => {
+const Model = ({ ...props }: JSX.IntrinsicElements['group']) => {
 	const group = useRef<THREE.Group>();
 	const { nodes, materials } = useGLTF('/me.glb') as GLTFResult;
 	return (
@@ -28,4 +30,19 @@ const DefaultMe = ({ ...props }: JSX.IntrinsicElements['group']) => {
 	);
 };
 
-export default DefaultMe;
+const Character = () => {
+	return (
+		<div className="canvas">
+			<Canvas>
+				<ambientLight/>
+				<pointLight/>
+				<OrbitControls enableZoom={false} rotateSpeed={0.7} />
+				<Suspense fallback={null}>
+					<Model/>
+				</Suspense>
+			</Canvas>
+		</div>
+	);
+};
+
+export default Character;

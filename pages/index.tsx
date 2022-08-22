@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from 'components/header/header';
 import Footer from 'components/footer/footer';
+import Character from 'components/character'
 import { tabs } from './api/tabs';
 import { motion } from 'framer-motion';
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei';
-import DefaultMe from './api/meDefault'
+
 const Home = () => {
 	const [[page], setPage] = useState([0, null]);
 
@@ -41,17 +40,8 @@ const Home = () => {
 						})}
 					</div>
 				</div>
-				
-				<div className="canvas">
-					<Canvas>
-						<ambientLight/>
-						<pointLight/>
-						<OrbitControls enableZoom={false} rotateSpeed={0.7} />
-						<Suspense fallback={null}>
-							<DefaultMe/>
-						</Suspense>
-					</Canvas>
-				</div>
+
+				<Character/>
 					
 				<motion.div
 					key={page}
