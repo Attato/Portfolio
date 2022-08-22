@@ -1,38 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #101113;
-  font-family: 'Josefin Sans', sans-serif;
-  scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	background-color: #101113;
+	font-family: 'Josefin Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
-button{
-  font-family: 'Josefin Sans', sans-serif;
+button {
+	font-family: 'Josefin Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
 }
 
-h1{
-  color: white;
-  font-weight: 400;
-  font-size: 42px;
+h1 {
+	color: white;
+	font-weight: 400;
+	font-size: 42px;
+}
+
+h3 {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #28292b;
 }
 
 #tr-popup {
-  display: none !important;
+	display: none !important;
 }
-

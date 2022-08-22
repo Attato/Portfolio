@@ -53,7 +53,7 @@ const Home = (
             </div>
 
             <div className="button__section">
-                <button>Next page <Image src="/arrow.svg" width="16" height="16" alt="Next page"/></button>
+                <button><Link href="/#header"><a>Back to top<Image src="/arrow.svg" width="16" height="16" alt="Next page"/></a></Link></button>
             </div>         
         </div>
     </div>
@@ -69,10 +69,118 @@ const About = (
         </Head>
 
         <div className="body__column-wrap">
+            <div className="assistance">
+                <div className="assistance__row">
+                    <Image src="/mouse_left.svg" alt="" width={20} height={20}/>
+                    <p>- Rotate</p>
+                </div>
+
+                <div className="assistance__row">
+                    <Image src="/mouse_right.svg" alt="" width={20} height={20}/>
+                    <p>- Grab</p>
+                </div>
+            </div>
+
             <div className="home__welcome-info">
-                <h1>Page about me</h1>
-                <p>I have experience in Frontend development, <br/> I mainly develop applications myself. <br/> I have experience with Vue, but I enjoy developing React with TypeScript.</p>
-                <p className="read__more">Read More <Image src="/arrow.svg" alt="" width={16} height={16} /></p>
+                <h3>About me</h3>
+                <p>I have experience with Vue, but I enjoy developing React with TypeScript.</p>
+            </div>
+
+            <div className="section">
+                <h3>About project</h3>
+
+                <span>Open <code className="inline">`package.json`</code> and look at the contents of the <code className="inline">`scripts`</code>:</span>
+
+                <pre className="pre_language_json">
+                    <code className="code_language_json">
+                        <span className="token_property">"scripts"</span>
+                        <span className="token_operator">: </span> 
+                        <span className="token_punctuation">&#123;<br /></span>
+                        <div className="token_space">
+                            <span className="token_property">"dev"</span>
+                            <span className="token_operator">: </span> 
+                            <span className="token_string">"next dev"</span>
+                            <span className="token_punctuation">,<br /></span>
+                            <span className="token_property">"build"</span>
+                            <span className="token_operator">: </span> 
+                            <span className="token_string">"next build"</span>
+                            <span className="token_punctuation">,<br /></span>
+                            <span className="token_property">"start"</span>
+                            <span className="token_operator">: </span> 
+                            <span className="token_string">"next start"</span>
+                            <span className="token_punctuation">,<br /></span>
+                            <span className="token_property">"lint"</span>
+                            <span className="token_operator">: </span> 
+                            <span className="token_string">"next lint"<br /></span>
+                        </div>
+                        <span className="token_punctuation">&#125;</span>
+                    </code>
+                </pre>
+
+                <p>These scripts refer to the different stages of developing an application:</p>
+                <ul className="unordered_list">
+                    <li className="list_item"><code className="inline">`dev`</code> - Runs <code className="inline">`next dev`</code> to start Next.js in development mode.</li>
+                    <li className="list_item"><code className="inline">`build`</code> - Runs <code className="inline">`next build`</code> to build the application for production usage.</li>
+                    <li className="list_item"><code className="inline">`start`</code> - Runs <code className="inline">`next start`</code> to start a Next.js production server.</li>
+                    <li className="list_item"><code className="inline">`lint`</code> - Runs <code className="inline">`next lint`</code> to set up Next.js' built-in ESLint configuration.</li>
+                </ul>
+                <p>Then look at the content of the <code className="inline">`dependencies`</code>:</p>
+                <pre className="pre_language_json">
+                    <code className="code_language_json">
+                        <span className="token_property">"dependencies"</span>
+                        <span className="token_operator">: </span> 
+                        <span className="token_punctuation">&#123;<br /></span>
+
+                        <div className="token_space">
+
+                            <span className="token_property">"@react-three/drei"</span>
+                            <span className="token_operator">:</span> 
+                            <span className="token_string">"^9.17.3"</span>
+                            <span className="token_punctuation">,<br /></span>
+
+                            <span className="token_property">"@react-three/fiber"</span>
+                            <span className="token_operator">:</span> 
+                            <span className="token_string">"^8.2.1"</span>
+                            <span className="token_punctuation">,<br /></span>
+
+                            <span className="token_property">"framer-motion"</span>
+                            <span className="token_operator">:</span> 
+                            <span className="token_string">"^6.5.1"</span>
+                            <span className="token_punctuation">,<br /></span>
+                            
+                            <span className="token_property">"next"</span>
+                            <span className="token_operator">:</span> 
+                            <span className="token_string">"12.2.2"</span>
+                            <span className="token_punctuation">,<br /></span>
+
+                            <span className="token_property">"node-sass"</span>
+                            <span className="token_operator">:</span> 
+                            <span className="token_string">"^7.0.1"</span>
+                            <span className="token_punctuation">,<br /></span>
+
+                            <span className="token_property">"react"</span>
+                            <span className="token_operator">:</span> 
+                            <span className="token_string">"18.2.0"</span>
+                            <span className="token_punctuation">,<br /></span>
+
+                            <span className="token_property">"react-dom"</span>
+                            <span className="token_operator">:</span> 
+                            <span className="token_string">"18.2.0"</span>
+                            <span className="token_punctuation">,<br /></span>
+
+                            <span className="token_property">"typescript"</span>
+                            <span className="token_operator">:</span> 
+                            <span className="token_string">"^4.7.4"<br /></span>
+                        </div>
+                        <span className="token_punctuation">&#125;</span>
+                    </code>
+                </pre>
+
+                <p>Here are the dependencies associated with this project. You can find out more about the project <Link href="https://github.com/Attato/Portfolio"><a>here.</a></Link></p>
+
+                <div className="button__section">
+                    <button><Link href="/#header"><a>Back to top<Image src="/arrow.svg" width="16" height="16" alt="Next page"/></a></Link></button>
+                </div>  
             </div>
         </div>
     </div>
@@ -86,6 +194,20 @@ const Portfolio = (
             <meta name="description" content="" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
+
+        <div className="body__column-wrap">
+            <div className="assistance">
+                <div className="assistance__row">
+                    <Image src="/mouse_left.svg" alt="" width={20} height={20}/>
+                    <p>- Rotate</p>
+                </div>
+
+                <div className="assistance__row">
+                    <Image src="/mouse_right.svg" alt="" width={20} height={20}/>
+                    <p>- Grab</p>
+                </div>
+            </div>
+        </div>
 
         <div className="row__projects">
             
@@ -113,7 +235,10 @@ const Portfolio = (
                 <p>This site... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>                    
                 <Link href="https://mini-games-attato.vercel.app/" target="blank"><a><Image src="/mini_games.png" alt="" width={690} height={370}/></a></Link>
                 <p>This site... Lorem ipsum dolor sit amet <Link href="https://koffemeow.github.io/AirTickets"><a>https://koffemeow.github.io/AirTickets</a></Link></p>
-                <button><Link href="/#header"><a>Back to top ↑</a></Link></button>
+                
+                <div className="button__section">
+                    <button><Link href="/#header"><a>Back to top<Image src="/arrow.svg" width="16" height="16" alt="Next page"/></a></Link></button>
+                </div>     
             </div>
         </div>
     </div>
@@ -129,8 +254,18 @@ const Contact = (
         </Head>
 
         <div className="body__column-wrap">
+            <div className="assistance">
+                <div className="assistance__row">
+                    <Image src="/mouse_left.svg" alt="" width={20} height={20}/>
+                    <p>- Rotate</p>
+                </div>
+
+                <div className="assistance__row">
+                    <Image src="/mouse_right.svg" alt="" width={20} height={20}/>
+                    <p>- Grab</p>
+                </div>
+            </div>
             <div className="home__welcome-info">
-                <h1>Contact me</h1>
 
                 <div className="contact__links">
                     <div className="contact__block">

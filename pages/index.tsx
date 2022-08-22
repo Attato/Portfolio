@@ -18,6 +18,7 @@ const Home = () => {
 
 	return (
 		<div translate="no">
+			
 			<Header />
 			
 			<div className="row">
