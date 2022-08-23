@@ -16,6 +16,7 @@ const Home = (
         <div className="body__column-wrap">
 
             <div className="home__welcome-info">
+                <h3>Greetings</h3>
                 <p>Hello! Welcome to my portfolio. In this place you can learn something about me and my projects.</p>
                 <p>Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
             </div>
