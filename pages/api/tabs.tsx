@@ -225,7 +225,7 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>Part of the portfolio in which I store my mini-applications. You can quickly jump to the project by clicking on the picture.</p>                    
-                <a href="https://mini-apps-attato.vercel.app/" target="blank"><Image src="/mini_apps.png" alt="" width={690} height={370}/></a>
+                <a href="https://mini-apps-attato.vercel.app/" target="blank"><Image src="/projects/mini_apps.png" alt="" width={690} height={370}/></a>
                 <p>Or look at the code <a href="https://github.com/Attato/Mini-apps" target="blank">here.</a></p>
             </div>
 
@@ -238,7 +238,7 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>Part of the portfolio in which I store my mini-games. You can quickly jump to the project by clicking on the picture.</p>                    
-                <Link href="https://mini-games-attato.vercel.app/" target="blank"><a><Image src="/mini_games.png" alt="" width={690} height={370}/></a></Link>
+                <Link href="https://mini-games-attato.vercel.app/" target="blank"><a><Image src="/projects/mini_games.png" alt="" width={690} height={370}/></a></Link>
                 <p>Or look at the code <a href="https://github.com/Attato/Mini-games" target="blank">here.</a></p>
                 
                 <div className="button__section">
@@ -274,15 +274,50 @@ const Contact = (
                 <h3>Contact me</h3>
                 <p>You can contact me here.</p>
                 <div className="contact__links">
-                    <div className="contact__block">
-                        <Link href="https://github.com/Attato"><a className="social__link" target="blank"><Image src="/github.svg" alt="" width={20} height={20}/><span>GitHub</span></a></Link>
-                        <Link href="mailto:rde8519@mail.ru"><a className="social__link"><Image src="/email.svg" alt="" width={20} height={20}/><span>Mail</span></a></Link>
-                    </div>
 
-                    <div className="contact__block">
-                        <Link href="https://vk.com/qwaqwakva"><a className="social__link" target="blank"><Image src="/vk.svg" alt="" width={20} height={20}/><span>VKontakte</span></a></Link>
-                        <Link href="https://t.me/qwaqwakwa"><a className="social__link" target="blank"><Image src="/telegram.svg" alt="" width={20} height={20}/><span>Telegram</span></a></Link>
-                    </div>
+                    <Link href="https://github.com/Attato" >
+                        <a target="blank">
+                            <div className="contact__block">
+                                <div className="social__link"><Image src="/github.svg" alt="" width={20} height={20}/><span>GitHub</span></div>  
+                                <Image src="/pictures/rabbit.png" alt="" width={75} height={75}></Image>
+                                <h3>Attato</h3>  
+                                <p>Here is my github.</p>  
+                            </div>
+                        </a>
+                    </Link>
+                    
+                    <Link href="mailto:rde8519@mail.ru" >
+                        <a target="blank">
+                            <div className="contact__block">
+                                <div className="social__link"><Image src="/email.svg" alt="" width={20} height={20}/><span>Mail</span></div>  
+                                <Image src="/pictures/cat.png" alt="" width={75} height={75}></Image>
+                                <h3>rde8519</h3>  
+                                <p>Here is my mail.</p>  
+                            </div>
+                        </a>
+                    </Link>
+
+                    <Link href="https://vk.com/qwaqwakva" >
+                        <a target="blank">
+                            <div className="contact__block">
+                                <div className="social__link"><Image src="/vk.svg" alt="" width={20} height={20}/><span>VKontakte</span></div>  
+                                <Image src="/pictures/vk.jpg" alt="" width={75} height={75}></Image>
+                                <h3>Denis <br /> Dolgopolsky</h3>  
+                                <p>Write here if you want  an instant response.</p>  
+                            </div>
+                        </a>
+                    </Link>
+
+                    <Link href="https://t.me/qwaqwakwa" >
+                        <a target="blank">
+                            <div className="contact__block">
+                                <div className="social__link"><Image src="/telegram.svg" alt="" width={20} height={20}/><span>Telegram</span></div>  
+                                <Image src="/pictures/telegram.jpg" alt="" width={75} height={75}></Image>
+                                <h3>kebl2uy</h3>  
+                                <p>Here I am also always online.</p> 
+                            </div>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>
