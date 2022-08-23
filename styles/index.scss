@@ -69,6 +69,7 @@
             display: flex;
             gap: 20px;
             justify-content: center;
+            user-select: none;
 
             .assistance__row {
                 display: flex;
@@ -143,12 +144,14 @@
     
                         span {
                             border-radius: 50%;
+                            user-select: none;
                         }
     
                         .social__link {
                             display: flex;
                             align-items: flex-end;
                             gap: 10px;
+                            user-select: none;
     
                             span {
                                 transition: all .2s;
@@ -162,6 +165,7 @@
                         h3 {
                             margin: 0;
                             line-height: 1.3;
+                            user-select: all;
                         }
                     }
                 }
@@ -325,6 +329,7 @@
                 width: 100%;
                 margin: 0;
                 font-size: 30px;
+                user-select: none;
             
                 .setup_anchor {
 					position: absolute;
