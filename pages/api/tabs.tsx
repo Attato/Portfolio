@@ -225,7 +225,7 @@ const Portfolio = (
                     </span>
                 </h1>
                 <p>Part of the portfolio in which I store my mini-applications. You can quickly jump to the project by clicking on the picture.</p>                    
-                <a href="https://mini-apps-attato.vercel.app/" target="blank"><Image src="/mini_games.png" alt="" width={690} height={370}/></a>
+                <a href="https://mini-apps-attato.vercel.app/" target="blank"><Image src="/mini_apps.png" alt="" width={690} height={370}/></a>
                 <p>Or look at the code <a href="https://github.com/Attato/Mini-apps" target="blank">here.</a></p>
             </div>
 
