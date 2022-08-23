@@ -15,18 +15,6 @@ const Home = (
 
         <div className="body__column-wrap">
 
-            <div className="assistance">
-                <div className="assistance__row">
-                    <Image src="/mouse_left.svg" alt="" width={20} height={20}/>
-                    <p>- Rotate</p>
-                </div>
-
-                <div className="assistance__row">
-                    <Image src="/mouse_right.svg" alt="" width={20} height={20}/>
-                    <p>- Grab</p>
-                </div>
-            </div>
-
             <div className="home__welcome-info">
                 <p>Hello! Welcome to my portfolio. In this place you can learn something about me and my projects.</p>
                 <p>Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
@@ -69,18 +57,7 @@ const About = (
         </Head>
 
         <div className="body__column-wrap">
-            <div className="assistance">
-                <div className="assistance__row">
-                    <Image src="/mouse_left.svg" alt="" width={20} height={20}/>
-                    <p>- Rotate</p>
-                </div>
-
-                <div className="assistance__row">
-                    <Image src="/mouse_right.svg" alt="" width={20} height={20}/>
-                    <p>- Grab</p>
-                </div>
-            </div>
-
+            
             <div className="home__welcome-info">
                 <h3>About me</h3>
                 <p>I have experience with Vue, but I enjoy developing React with TypeScript.</p>
@@ -196,18 +173,6 @@ const Portfolio = (
         </Head>
 
         <div className="body__column-wrap">
-            <div className="assistance">
-                <div className="assistance__row">
-                    <Image src="/mouse_left.svg" alt="" width={20} height={20}/>
-                    <p>- Rotate</p>
-                </div>
-
-                <div className="assistance__row">
-                    <Image src="/mouse_right.svg" alt="" width={20} height={20}/>
-                    <p>- Grab</p>
-                </div>
-            </div>
-
             <div className="home__welcome-info">
                 <h3>My works</h3>
                 <p>My projects will be here.</p>
@@ -259,17 +224,7 @@ const Contact = (
         </Head>
 
         <div className="body__column-wrap">
-            <div className="assistance">
-                <div className="assistance__row">
-                    <Image src="/mouse_left.svg" alt="" width={20} height={20}/>
-                    <p>- Rotate</p>
-                </div>
-
-                <div className="assistance__row">
-                    <Image src="/mouse_right.svg" alt="" width={20} height={20}/>
-                    <p>- Grab</p>
-                </div>
-            </div>
+        
             <div className="home__welcome-info">
                 <h3>Contact me</h3>
                 <p>You can contact me here.</p>
