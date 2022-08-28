@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import 'styles/variables.scss';
 
 * {
 	box-sizing: border-box;
@@ -8,7 +9,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #101113;
+	background-color: $main;
 	font-family: 'Josefin Sans', sans-serif;
 	scroll-behavior: smooth;
 }
@@ -43,7 +44,7 @@ h3 {
 	font-size: 18px;
 	font-weight: 500;
 	padding-bottom: 10px;
-	border-bottom: 3px solid #28292b;
+	border-bottom: 3px solid $border;
 	user-select: none;
 }
 
