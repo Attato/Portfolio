@@ -4,9 +4,10 @@ import Footer from 'components/footer/footer';
 import Character from 'components/character'
 import { tabs } from './api/tabs';
 import { motion } from 'framer-motion';
+import { NextPage } from 'next';
 
-const Home = () => {
-	const [[page], setPage] = useState([0, null]);
+const Home: NextPage = () => {
+	const [[page], setPage] = useState([0]);
 
 	useEffect(() => {
 		setPage(JSON.parse(localStorage.getItem('page number')));
@@ -26,13 +27,13 @@ const Home = () => {
 				<div className="sub">
 					<div className="sub__column">
 						{tabs.map(({ title }, activePage) => {
-							const isActive = activePage === page;
+							const isActive:boolean = activePage === page;
 							return (
 								<a
 									key={activePage}
 									className={isActive ? 'active__tab' : ''}
 									onClick={() => {
-										setPage([activePage, activePage - page]);
+										setPage([activePage]);
 									}}
 								>
 									{title}
