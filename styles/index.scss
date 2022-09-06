@@ -14,7 +14,7 @@
 	position: sticky;
 	top: 0;
 	z-index: 1000;
-	background-color: $main;
+	background-color: $blur;
 	backdrop-filter: blur(10px);
 
 	a {
