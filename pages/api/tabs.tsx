@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
-import { betweenBecoming } from './date'
 
 const Home = (
     <div className="body" key={Date.now()}>
@@ -18,7 +17,7 @@ const Home = (
             <div className="home__welcome-info">
                 <h3>Greetings</h3>
                 <p>Hello! Welcome to my portfolio. In this place you can learn something about me and my projects.</p>
-                <p>Frontend developer: {((+betweenBecoming.toISOString().slice(0, 4) - 1970) + "y " + (betweenBecoming.getMonth()) + "m " + betweenBecoming.getDate() + "d.")}</p>
+                <p>Front-end developer since: <br/>January 11, 2021.</p>
             </div>
             
             <div className="section">
